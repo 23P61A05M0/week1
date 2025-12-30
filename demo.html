@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Magic Color Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      transition: background-color 0.5s;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Magic Button ✨</h1>
+  <p id="msg">Waiting for magic...</p>
+  <button onclick="doMagic()">Make Magic</button>
+
+  <script>
+    function doMagic() {
+      const colors = ["#ffadad", "#ffd6a5", "#fdffb6", "#caffbf", "#9bf6ff"];
+      document.body.style.backgroundColor =
+        colors[Math.floor(Math.random() * colors.length)];
+      document.getElementById("msg").textContent = "Magic happened! 🎉";
+    }Math.random() * 
+  </script>
+
+</body>
+</html>
